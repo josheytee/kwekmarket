@@ -1,0 +1,94 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: Jan 04, 2020 at 06:19 AM
+-- Server version: 10.3.21-MariaDB
+-- PHP Version: 7.3.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `kwekmark_kwekmarket`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `vendors`
+--
+
+CREATE TABLE `vendors` (
+  `id` int(11) NOT NULL,
+  `shop_name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `phone` varchar(30) DEFAULT NULL,
+  `balance` decimal(11,2) DEFAULT 0.00,
+  `address` varchar(255) DEFAULT NULL,
+  `zip_code` varchar(255) DEFAULT NULL,
+  `products` int(11) DEFAULT 0,
+  `expired_date` varchar(255) DEFAULT NULL,
+  `logo` varchar(255) DEFAULT NULL,
+  `remember_token` varchar(255) DEFAULT NULL,
+  `status` varchar(30) NOT NULL DEFAULT 'active',
+  `email_verified` int(3) DEFAULT NULL,
+  `sms_verified` int(3) DEFAULT NULL,
+  `email_ver_code` int(11) DEFAULT NULL,
+  `sms_ver_code` int(11) DEFAULT NULL,
+  `email_sent` int(3) NOT NULL DEFAULT 0,
+  `sms_sent` int(3) NOT NULL DEFAULT 0,
+  `vsent` int(11) NOT NULL DEFAULT 0,
+  `password` varchar(255) DEFAULT NULL,
+  `provider` varchar(255) DEFAULT NULL,
+  `provider_id` text DEFAULT NULL,
+  `approved` int(3) NOT NULL DEFAULT 0 COMMENT '0-pending, 1-approve, -1- reject',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vendors`
+--
+
+INSERT INTO `vendors` (`id`, `shop_name`, `email`, `phone`, `balance`, `address`, `zip_code`, `products`, `expired_date`, `logo`, `remember_token`, `status`, `email_verified`, `sms_verified`, `email_ver_code`, `sms_ver_code`, `email_sent`, `sms_sent`, `vsent`, `password`, `provider`, `provider_id`, `approved`, `created_at`, `updated_at`) VALUES
+(1, 'SamGreat Mega Shop', 'saolas9ja@gmail.com', '08130335681', 2500.00, 'Ogbomoso, Oyo', '234', 14, '2020-01-22 10:10:04', '1564218311.jpg', 'yCBmzYbyTzognW0gSDnYuR6wJSkSuu2J4UAFVPb9Um6r4lwIb2g1rhXt3WTQ', 'active', NULL, NULL, NULL, NULL, 0, 0, 0, '$2y$10$olZizTq06zxEgX.UtGMmVOzqOop9RPbcVx5ERb2MnSTmLw1M3muNK', NULL, NULL, 1, '2019-05-22 19:45:12', '2019-12-18 17:00:53'),
+(2, 'Jamesben Concept', 'jamesbenplc@gmail.com', '08104315105', 19991750.00, 'Okeola line 1, Mayfair', '220255', 99, '2020-01-23 00:41:07', '1559508335.jpg', '2iuuQ6RFi94VOgz0bmKPIzH7J6fcRiiD40aG6kac6I5FosU30FOfmdj7cgp9', 'active', NULL, NULL, NULL, NULL, 0, 0, 0, '$2y$10$ve1iNxyB3HBU1yyns56bhuXSxWsjSfqLSOK/A8zDQZhkhrfNbLGNq', NULL, NULL, 1, '2019-05-27 23:49:19', '2019-12-19 06:24:08'),
+(3, 'Pay', 'mypayfund@gmail.com', '08104315105', 0.00, NULL, NULL, 0, NULL, NULL, NULL, 'active', NULL, NULL, NULL, NULL, 0, 0, 0, '$2y$10$ZHV/SJqr1po3Y4.SnH3Xj.fr3O/X/5.um0K9dmsoog1kWMiCia096', NULL, NULL, 1, '2019-05-28 00:23:34', '2019-05-28 05:22:41'),
+(4, 'Governor Investment Plc', 'saolas@ymail.com', '08130335681', 0.00, NULL, NULL, 0, NULL, NULL, NULL, 'active', NULL, NULL, NULL, NULL, 0, 0, 0, '$2y$10$kD1iTlCPwmVc6TZyiVx0Me5eiPXN9BPssVObXu5roypMcofUJvfxy', NULL, NULL, 1, '2019-07-27 19:10:49', '2019-07-27 19:15:47'),
+(5, 'Yink\'G', 'olayinkaonipede25@gmail.com', '08142788965', 0.00, NULL, NULL, 0, NULL, NULL, '2vxcuNJKqJu3teXShzg6GL9tufoR3jlLwOYxBKh8ch8BQu2N34oVq1q0SqDU', 'active', NULL, NULL, NULL, NULL, 0, 0, 0, '$2y$10$LkpltgLUsvQIusCCzvUZp.GnUQBn7HpYsL5UTFpIQfcSYOlsNPbF.', NULL, NULL, 1, '2019-10-30 15:17:38', '2019-10-30 16:48:09'),
+(6, 'BIZZYEM ENTERPRISES', 'bizzyementerprises@gmail.com', '08032121500', 500.00, 'Plot 8, Asamu Layout, Best Paul Adeniran street, Kosobo area, Oyo, Oyo, Nigeria', '234', 5, '2020-01-20 01:00:19', '1576868862.jpg', 'WmEtqVlvg41wE4iiFvU89yHuLSpOL7qN3ViIz04eHJiPE4waqp0baFsx0JB9', 'active', NULL, NULL, NULL, NULL, 0, 0, 0, '$2y$10$B2kW75qKAEUm9K323SJgjuWohZcSUDdmZxO4SgPi/H.kTogH0JJ6.', NULL, NULL, 1, '2019-12-21 05:18:00', '2019-12-21 06:07:42');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `vendors`
+--
+ALTER TABLE `vendors`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `vendors`
+--
+ALTER TABLE `vendors`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

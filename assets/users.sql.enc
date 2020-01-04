@@ -1,0 +1,111 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: Jan 04, 2020 at 06:20 AM
+-- Server version: 10.3.21-MariaDB
+-- PHP Version: 7.3.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `kwekmark_kwekmarket`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  `first_name` varchar(255) DEFAULT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `date_of_birth` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `phone` varchar(100) DEFAULT NULL,
+  `shipping_first_name` varchar(255) DEFAULT NULL,
+  `shipping_last_name` varchar(255) DEFAULT NULL,
+  `shipping_phone` varchar(255) DEFAULT NULL,
+  `shipping_email` varchar(255) DEFAULT NULL,
+  `address` text DEFAULT NULL,
+  `country` varchar(255) DEFAULT NULL,
+  `state` varchar(255) DEFAULT NULL,
+  `city` varchar(255) DEFAULT NULL,
+  `zip_code` varchar(255) DEFAULT NULL,
+  `billing_first_name` varchar(255) DEFAULT NULL,
+  `billing_last_name` varchar(255) DEFAULT NULL,
+  `billing_email` varchar(255) DEFAULT NULL,
+  `billing_phone` varchar(30) DEFAULT NULL,
+  `billing_address` text DEFAULT NULL,
+  `billing_country` varchar(50) DEFAULT NULL,
+  `billing_state` varchar(50) DEFAULT NULL,
+  `billing_city` varchar(50) DEFAULT NULL,
+  `billing_zip_code` varchar(30) DEFAULT NULL,
+  `remember_token` varchar(255) DEFAULT NULL,
+  `status` varchar(30) NOT NULL DEFAULT 'active',
+  `email_verified` int(3) DEFAULT NULL,
+  `sms_verified` int(3) DEFAULT NULL,
+  `email_ver_code` int(11) DEFAULT NULL,
+  `sms_ver_code` int(11) DEFAULT NULL,
+  `email_sent` int(3) NOT NULL DEFAULT 0,
+  `sms_sent` int(3) NOT NULL DEFAULT 0,
+  `vsent` int(11) NOT NULL DEFAULT 0,
+  `password` varchar(255) DEFAULT NULL,
+  `provider` varchar(191) DEFAULT NULL,
+  `provider_id` text DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `first_name`, `last_name`, `gender`, `date_of_birth`, `email`, `phone`, `shipping_first_name`, `shipping_last_name`, `shipping_phone`, `shipping_email`, `address`, `country`, `state`, `city`, `zip_code`, `billing_first_name`, `billing_last_name`, `billing_email`, `billing_phone`, `billing_address`, `billing_country`, `billing_state`, `billing_city`, `billing_zip_code`, `remember_token`, `status`, `email_verified`, `sms_verified`, `email_ver_code`, `sms_ver_code`, `email_sent`, `sms_sent`, `vsent`, `password`, `provider`, `provider_id`, `created_at`, `updated_at`) VALUES
+(1, 'user1', 'Samuel', 'Asefon', NULL, NULL, 'saolas9ja@gmail.com', '08130335681', NULL, NULL, NULL, 'user@user.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'IE5hKRvgmtih4uXRKsTWil34cLj4YMuhopQEuYgY8NjdEDkF5gnFTVVL2tes', 'active', 1, 1, NULL, NULL, 0, 0, 0, '$2y$10$gG/aE0vCkqQDy.vfSCKxi.8iGjP9Un5w7cQ/K8vMC4pN2cH7M2R6m', NULL, NULL, '2019-05-22 20:34:22', '2019-07-25 23:26:58'),
+(2, 'saolas', 'Samuel', 'Oluwadunsin', 'Male', '1994-09-23', 'samueloluwadunsin@gmail.com', '08130335681', 'Samuel', 'Oluwadunsin', '08130335681', 'samueloluwadunsin@gmail.com', 'Under-G, Lautech road', 'Nigeria', 'Oyo', 'Ogbomoso', '361104', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'PHsbLyJd7iShYminMn7n95f9td4jhA3lP7FES3bZDqazZqIWse0Z9sjj95pZ', 'active', 1, 1, NULL, 4066, 0, 0, 1558900387, '$2y$10$N8qHRSTi2v1seijztaDXuOf9jXdLeh//iV60lf61RkM2vRO524SDq', NULL, NULL, '2019-05-27 05:53:07', '2019-05-27 18:30:10'),
+(3, 'Jamesben Concept', 'James', 'Afuye', 'Male', '1994-01-02', 'jamesbenplc@gmail.com', '08188471241', 'Oluwakayode', 'Afuye', '8104315105', 'afuyejames@gmail.com', 'Okeola line 1, Mayfair', 'Nigeria', 'Osun', 'Modakeke', '220255', 'Oluwakayode', 'Afuye', 'afuyejames@gmail.com', '08104315105', 'Okeola line 1, Mayfair', 'Nigeria', 'Osun', 'Modakeke', '220255', 'vHiceHfzr6MF22q27MM7PSNU7ltCeNb94W1VDJ6c0K5Hu1rhn1qQBc33eWAS', 'active', 1, 1, 7239, 9663, 0, 0, 1558939324, '$2y$10$890G5MlhJQW27DxUzQy4OOv3HukBpriaA3yQkaIYIhNu/L/EwY8N2', NULL, NULL, '2019-05-27 16:42:04', '2019-12-26 20:35:26'),
+(4, 'nifegrace', 'Asefon', 'Grace', NULL, NULL, 'graceasefon88@gmail.com', '09034695044', NULL, NULL, NULL, 'graceasefon88@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'jLub3PFCo2jA8rRFmrki8Qo7DH77ZioDwIdVm6uoG4k4ReJ1d98cKcc47HM5', 'active', 1, 1, NULL, 4719, 0, 0, 1564240837, '$2y$10$ZOulL43pi61yCW8TKXApEeyGjUzl4hBHnJyRegrmDC9Ed4Pgkluzu', NULL, NULL, '2019-07-28 01:20:37', '2019-07-28 02:11:10'),
+(5, 'Ajayibank', 'Wale', 'Ajayi', NULL, NULL, 'ajayibank92@gmail.com', '09067411064', NULL, NULL, NULL, 'ajayibank92@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'active', 1, 1, 7854, NULL, 0, 0, 1568901774, '$2y$10$kiIGhXT/0utY51dZJ6esDuiL2xf6bFs8mW4bnpPAID/VlWUJP7kCa', NULL, NULL, '2019-09-20 00:02:54', '2019-11-20 00:00:55'),
+(6, 'CharlieJah', 'Charlie', 'Jah', NULL, NULL, 'inbox307@glmux.com', '83225274577', NULL, NULL, NULL, 'inbox307@glmux.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'blocked', 1, 1, 3322, 6992, 0, 0, 1576262781, '$2y$10$DqzQxouu5gwqM02/LFqb9uzJlaiewPJ09n1ajsrNbv2SCnjFHiGdC', NULL, NULL, '2019-12-13 15:27:34', '2019-12-16 20:30:52'),
+(7, 'Numerouno', NULL, NULL, NULL, NULL, 'akinremijulian@yahoo.com', '08038180982', NULL, NULL, NULL, 'akinremijulian@yahoo.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'active', 1, 1, 2507, NULL, 0, 0, 1576303860, '$2y$10$sNCchvHdLQsuormz/f2Q3Oz/UJlzcdlBGTJJBEp0Z45gS9XwcGlLS', NULL, NULL, '2019-12-14 17:11:00', '2019-12-14 17:13:07'),
+(8, 'bizzyem', 'Bizzyem', 'Enterprises', 'Female', '1994-08-13', 'bizzyementerprises@gmail.com', '08032121500', 'Bizzyem', 'Enterprises', '08032121500', 'bizzyementerprises@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'KfSrwttBY6ySqUnrzAXXmQMZDwKyZ9OgLwEN2aAsuf1U1jCrrDqq2cvHImgT', 'active', 1, 1, 4748, NULL, 0, 0, 1576865336, '$2y$10$HHNqJBt8jO5c.Gx8T4CO1u.6ghodZtUqp2A3OYAyTSBrmzSpRdDTO', NULL, NULL, '2019-12-21 03:43:06', '2019-12-21 05:51:32');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
