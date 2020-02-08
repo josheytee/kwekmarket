@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="896fe260-7715-4931-b212-9ba368f7d869" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/custom/5e1136f9afb35.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/framework/views/4f639f09fcfd3a7cca245fe3adba0f1c64deff7e.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/framework/views/7ffdd0c81b5718dee2c28b7600643361cc5b49c3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/framework/views/8b92eae05362582197f83cb055b79b7ca7eed61c.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/storage/framework/views/fb751962733ea8976c651f270f6e764932d78c2b.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/user/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/user/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/resources/views/layout/partials/headerarea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/resources/views/layout/partials/headerarea.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/storage/framework/views/bf61e5cfae2277fe4905b4ac4589b1b8bb7205a6.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/storage/framework/views/bf61e5cfae2277fe4905b4ac4589b1b8bb7205a6.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,6 +253,11 @@
       <workItem from="1576884709570" duration="2393000" />
       <workItem from="1576923295816" duration="620000" />
       <workItem from="1577474455203" duration="1482000" />
+      <workItem from="1578232614992" duration="14000" />
+      <workItem from="1578782546382" duration="1164000" />
+      <workItem from="1578818369251" duration="1012000" />
+      <workItem from="1578828120001" duration="226000" />
+      <workItem from="1581160195682" duration="3487000" />
     </task>
     <servers />
   </component>
@@ -271,10 +284,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="490" y="310" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1366.738@0.30.1366.738" timestamp="1575720214461" />
-    <state x="380" y="136" width="626" height="558" key="find.popup" timestamp="1576844009710">
+    <state x="380" y="136" width="626" height="558" key="find.popup" timestamp="1581166512505">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="380" y="136" width="626" height="558" key="find.popup/0.30.1366.738@0.30.1366.738" timestamp="1576844009710" />
+    <state x="380" y="136" width="626" height="558" key="find.popup/0.30.1366.738@0.30.1366.738" timestamp="1581166512505" />
     <state width="360" height="295" key="javadoc.popup.new" timestamp="1576450633713">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -283,9 +296,9 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="339" y="180" key="run.anything.popup/0.30.1366.738@0.30.1366.738" timestamp="1576000163264" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1576622998025">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1581165283839">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1576622998025" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1581165283839" />
   </component>
 </project>
