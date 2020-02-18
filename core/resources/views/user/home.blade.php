@@ -139,7 +139,9 @@
                                                      <div class="col-lg-3 col-md-6">
                                                        <div class="single-new-collection-item "><!-- single new collections -->
                                                            <div class="thumb">
+                                                               @isset($topSoldPro->previewimages()->first()->image)
                                                                <img src="{{asset('assets/user/img/products/'.$topSoldPro->previewimages()->first()->image)}}" alt="new collcetion image">
+                                                               @endisset
                                                                <div class="hover">
                                                                  <a href="{{route('user.product.details', [$topSoldPro->slug, $topSoldPro->id])}}" class="view-btn"><i class="fa fa-eye"></i></a>
                                                                </div>
@@ -167,7 +169,9 @@
                                                    <div class="col-lg-3 col-md-6">
                                                      <div class="single-new-collection-item "><!-- single new collections -->
                                                          <div class="thumb">
+                                                         @isset($topSoldPro->previewimages()->first()->image)
                                                              <img src="{{asset('assets/user/img/products/'.$topRatedPro->previewimages()->first()->image)}}" alt="new collcetion image">
+                                                          @endisset
                                                              <div class="hover">
                                                                <a href="{{route('user.product.details', [$topRatedPro->slug, $topRatedPro->id])}}" class="view-btn"><i class="fa fa-eye"></i></a>
                                                              </div>
